@@ -1,4 +1,4 @@
-name: release app
+name: enforce-pr-label
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ jobs:
   enforce-label:
     runs-on: ubuntu-latest
     steps:
-    - uses: meetmarakana/Enforce-PR@2.1
+    - uses: meetmarakana/Enforce-PR@latest
       with:
         REQUIRED_LABELS_ANY: "feature,bug,enhancement"
         REQUIRED_LABELS_ALL: ""
