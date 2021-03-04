@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: meetmarakana/enforce_pr_label@master
       with:
-        REQUIRED_LABELS_ANY: "feature,bug,enhancement"
+        REQUIRED_LABELS_ANY: "feature,fix,enhancement"
         REQUIRED_LABELS_ALL: ""
         BANNED_LABELS: "banned"
