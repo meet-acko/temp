@@ -7,7 +7,7 @@ jobs:
   enforce-label:
     runs-on: ubuntu-latest
     steps:
-    - uses: meetmarakana/Enforce-PR@main
+    - uses: meetmarakana/enforce_pr_label@master
       with:
         REQUIRED_LABELS_ANY: "feature,bug,enhancement"
         REQUIRED_LABELS_ALL: ""
