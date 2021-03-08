@@ -9,8 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: meet-acko/enforce_label
+          repository: ackotech/enforce-label
           ref: main
           token: ${{ secrets.MY_TOKEN }}
           path: .github/actions
       - uses: ./.github/actions/
+        with:
+          REQUIRED_LABELS_ANY: "feature,bug,enhancement"
+          REQUIRED_LABELS_ALL: ""
+          BANNED_LABELS: "banned"
