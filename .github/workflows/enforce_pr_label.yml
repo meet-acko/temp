@@ -11,4 +11,4 @@ jobs:
     with:
           repository: meet-acko/enforce_label
           ref: main
-          token: 74bfb1769d1d00c2d1660379b18207a80b123bce
+          token: ${{ secrets.MY_TOKEN }}
