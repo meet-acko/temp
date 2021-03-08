@@ -7,9 +7,11 @@ jobs:
   enforce-label:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout GitHub Action Repo
-      uses: actions/checkout@v2
-      with:
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
           repository: meet-acko/enforce_label
           ref: main
           token: ${{ secrets.MY_TOKEN }}
+          path: .github/actions
+      - uses: ./.github/actions/
