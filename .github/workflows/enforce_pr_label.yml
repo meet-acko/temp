@@ -11,7 +11,7 @@ jobs:
         with:
           repository: ackotech/enforce-label
           ref: main
-          token: ${{ secrets.MY_TOKEN }}
+          token: dfc83ee9b2d75e5c0f341722e7acb8a62d1953f0
           path: .github/actions
       - uses: ./.github/actions/
         with:
